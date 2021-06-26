@@ -2,11 +2,16 @@ version: "3.8"
 
 services:
   app:
+    build:
+      dockerfile: Dockerfile
     command:
+      - npx
       - nodos
       - server
       - -h
       - 0.0.0.0
+    volumes:
+      - .:/app
     ports:
       - '8080:8080'
 
