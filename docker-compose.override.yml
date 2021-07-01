@@ -5,11 +5,8 @@ services:
     build:
       dockerfile: Dockerfile
     command:
-      - npx
-      - nodos
+      - make
       - server
-      - -h
-      - 0.0.0.0
     volumes:
       - .:/app
     ports:
