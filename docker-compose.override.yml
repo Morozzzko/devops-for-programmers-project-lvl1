@@ -19,5 +19,7 @@ services:
       - '80:80'
     volumes:
       - './services/caddy/Caddyfile:/etc/caddy/Caddyfile'
+      - './services/caddy/data/:/data'
+      - './services/caddy/config/:/config'
     depends_on:
       - app
