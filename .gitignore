@@ -1,3 +1,5 @@
 node_modules
 public/assets
 .env
+services/caddy/config/
+services/caddy/data/
