@@ -12,7 +12,7 @@ Just pull image from dockerhub: `docker pull morozzzko/devops-for-programmers-pr
 #### Local
 
 1. Clone this repo `git clone git@github.com:Morozzzko/devops-for-programmers-project-lvl1.git`
-2. Set up local environment & dependencies: `make copy-env install`
+2. Set up local environment & dependencies: `make setup`
 3. Run `make server` to launch server or `make test` to run tests
 
 
