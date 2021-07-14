@@ -12,7 +12,7 @@ services:
     ports:
       - '8080:8080'
     env_file:
-      - .env
+      - .env.example
 
   caddy:
     image: caddy:2-alpine
