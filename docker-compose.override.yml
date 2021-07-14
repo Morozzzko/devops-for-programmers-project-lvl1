@@ -25,3 +25,7 @@ services:
       - './services/caddy/config/:/config'
     depends_on:
       - app
+
+  db:
+    env_file:
+      - .env.example
