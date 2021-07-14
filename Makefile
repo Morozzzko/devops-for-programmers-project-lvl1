@@ -13,6 +13,8 @@ copy-env:
 install:
 	npm i
 
+setup: copy-env install
+
 ci: copy-env compose-test
 
 .PHONY: server test compose-test copy-env install ci
