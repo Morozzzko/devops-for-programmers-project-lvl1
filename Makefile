@@ -10,4 +10,9 @@ compose-test:
 copy-env:
 	cp .env.example .env
 
+install:
+	npm i
+
 ci: copy-env compose-test
+
+.PHONY: server test compose-test copy-env install ci
