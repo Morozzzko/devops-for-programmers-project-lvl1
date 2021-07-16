@@ -1,20 +1,19 @@
-.PHONY: server test compose-test copy-env install ci
+.PHONY: server test compose-test ci
 
 server:
-	npx nodos server -h 0.0.0.0
+	npm start
 
 test:
-	npm -s test
+	npm test
+
+compose-install:
+	docker-compose run app npm install
+
+compose-server:
+	docker-compose up
 
 compose-test:
 	docker-compose -f docker-compose.yml up --abort-on-container-exit
 
 ci: compose-test
-
-install:
-	npm i
-
-setup: copy-env install
-
-ci: copy-env compose-test
 
