@@ -23,5 +23,5 @@ compose-server:
 compose-test:
 	docker-compose -f docker-compose.yml up --abort-on-container-exit
 
-ci: compose-test
+ci: compose-setup compose-test
 
