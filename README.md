@@ -18,6 +18,7 @@ Just pull image from dockerhub: `docker pull morozzzko/devops-for-programmers-pr
 #### Local (compose)
 
 1. Clone this repo `git clone git@github.com:Morozzzko/devops-for-programmers-project-lvl1.git`
-2. Run `make compose-server` to launch server or `make compose-test` to run tests
+2. Set up local environment for docker use: `make compose-setup`
+3. Run `make compose-server` to launch server or `make compose-test` to run tests
 
 
