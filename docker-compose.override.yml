@@ -11,10 +11,6 @@ services:
       - ./app:/app
     ports:
       - '8080:8080'
-    env_file: .env
-
-  db:
-    env_file: .env
 
   caddy:
     image: caddy:2-alpine
@@ -27,4 +23,3 @@ services:
       - './services/caddy/config/:/config'
     depends_on:
       - app
-    env_file: .env
