@@ -12,6 +12,8 @@ setup-dependencies:
 copy-env:
 	cp .env.example .env
 
+setup: copy-env
+
 compose-setup: copy-env
 
 compose-install:
